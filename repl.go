@@ -15,6 +15,7 @@ func startRepl() {
 
 		words := cleanInput(reader.Text())
 
+		// catch empty input edge case
 		if len(words) == 0 {
 			continue
 		}
